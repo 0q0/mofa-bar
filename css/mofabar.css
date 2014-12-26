@@ -1,0 +1,57 @@
+.mofabar-wrap {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+}
+
+.mofabar-scrollbar {
+  background: #898989;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 7px;
+  box-shadow: 0 0 1px #fff;
+  position: absolute;
+  opacity: 0;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  transition: linear 300ms opacity;
+}
+
+.mofabar-scrollbar-shown {
+  opacity: 1;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+}
+
+.mofabar-scrollbar-x {
+  height: 7px;
+  margin-left: 2px;
+  bottom: 2px;
+  left: 0;
+}
+
+.mofabar-scrollbar-y {
+  width: 7px;
+  margin-top: 2px;
+  right: 2px;
+  top: 0;
+}
+
+.mofabar-inner {
+  overflow: scroll;
+}
+
+/** A bug in Chrome 25 on Lion requires each selector to have their own
+    blocks. E.g. the following:
+
+    .mofabar-inner::-webkit-scrollbar, .mofabar-inner::scrollbar {...}
+
+    causes the width and height rules to be ignored by the browser resulting
+    in both native and mofabar scrollbars appearing at the same time.
+ */
+.mofabar-inner::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+.mofabar-inner::scrollbar {
+  width: 0;
+  height: 0;
+}

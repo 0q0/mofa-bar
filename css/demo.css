@@ -1,0 +1,77 @@
+html {
+    font-family: Calibri, "Microsoft YaHei", "Hiragino Sans GB", "WenQuanYi Micro Hei", sans-serif;
+}
+
+body {
+    margin: 0;
+    color: #898989;
+}
+
+/*演示区域*/
+
+.box {
+    width: 228px;
+    height: 259px;
+    float: right;
+    margin-top: 26px;
+    margin-right: 12px;
+}
+
+.box .box-inner {
+    width: 228px;
+    height: 259px;
+}
+
+.box .box-inner p {
+    width: 700px;
+    word-wrap: break-word;
+    background: #D8D8D8;
+    margin: 0;
+    padding: 10px;
+    font-size: 16px;
+}
+
+/*简介区域*/
+
+.intro {
+    width: 242px;
+    height: 259px;
+    padding-left: 10px;
+    margin-top: 26px;
+    border-left: 1px solid #B6B6B6;
+}
+
+.intro h1 {
+    margin: 0;
+    font-size: 30px;
+}
+
+.intro-list {
+    margin: 0;
+    padding: 0 0 8px 18px;
+    font-size: 14px;
+}
+
+.intro-list li {
+    margin-top: 4px;
+}
+
+.link {
+    color: #3EC7F4;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+/*排版*/
+
+.left-wrap {
+    width: 50%;
+    float: left;
+}
+
+.right-wrap {
+    width: 50%;
+    float: right;
+}
