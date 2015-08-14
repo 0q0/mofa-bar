@@ -5,7 +5,7 @@ Mofa Bar 是一个实现自定义滚动条的 jQuery 插件，该插件基于 Gu
 
 ##Demo
 
-[戳这里](http://weylin.me/mofa-bar/)
+[戳这里](http://0q0.github.io/mofa-bar)
 
 ## Quick start
 
